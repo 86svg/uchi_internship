@@ -1,5 +1,5 @@
 class Student < ApplicationRecord
-  belongs_to :class_group
+  belongs_to :class_book
 
   validates :first_name, :last_name, :surname, presence: true
 
