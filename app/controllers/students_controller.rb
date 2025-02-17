@@ -28,7 +28,7 @@ class StudentsController < ApplicationController
     render json: {}, status: :not_found
   end
 
-  # GET /schools/:school_id/classes/:class_group_id/students
+  # GET /schools/:school_id/classes/:class_book_id/students
   def index
     school = School.find(params[:school_id])
     class_book = school.class_books.find(params[:class_book_id])
