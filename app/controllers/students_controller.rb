@@ -31,8 +31,8 @@ class StudentsController < ApplicationController
   # GET /schools/:school_id/classes/:class_group_id/students
   def index
     school = School.find(params[:school_id])
-    class_group = school.class_groups.find(params[:class_group_id])
-    students = class_group.students
+    class_book = school.class_books.find(params[:class_book_id])
+    students = class_book.students
 
     render json: students, status: :ok
   end
@@ -40,6 +40,6 @@ class StudentsController < ApplicationController
   private
 
   def student_params
-    params.require(:student).permit(:first_name, :last_name, :surname, :class_group_id)
+    params.require(:student).permit(:first_name, :last_name, :surname, :class_book_id)
   end
 end
