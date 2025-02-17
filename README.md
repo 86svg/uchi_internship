@@ -1,24 +1,2 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Uchi Internship — это проект, разработанный в рамках тестового задания для стажировки. Представляет собой API для управления данными об учениках и классах в школе, регистрацию и удаление учеников, получение списка учеников определенного класса, а также получение списка классов в школе.
